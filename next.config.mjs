@@ -80,15 +80,7 @@ export default async function config() {
     },
   })
 
-  let withPWA = nextPWA({
-    experimentalFeatures: {
-      pwa: {
-        enabled: true,
-        icon: '/my-icon.png',
-        serviceWorker: true,
-      },
-    },
-  })
 
-  return withPWA(withMDX(nextConfig))
+
+  return (withMDX(nextConfig))
 }
