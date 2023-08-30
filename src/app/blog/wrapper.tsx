@@ -5,6 +5,9 @@ import { MDXComponents } from '@/components/MDXComponents'
 import { PageLinks } from '@/components/PageLinks'
 import { formatDate } from '@/lib/formatDate'
 import { type Article, type MDXEntry, loadArticles } from '@/lib/mdx'
+import PostComment  from '@/components/PostComment'
+
+
 
 export default async function BlogArticleWrapper({
   article,
@@ -38,10 +41,15 @@ export default async function BlogArticleWrapper({
           </header>
         </FadeIn>
 
+
         <FadeIn>
           <MDXComponents.wrapper className="mt-24 sm:mt-32 lg:mt-40">
             {children}
+            <div className='mt-24 sm:mt-32 lg:mt-40'>
+              <PostComment />
+            </div>
           </MDXComponents.wrapper>
+
         </FadeIn>
       </Container>
 
