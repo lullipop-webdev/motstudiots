@@ -39,16 +39,17 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Loyalty" invert>
-          Our team has been with us since the beginning because we believe build better technology
-            starts with investing in our employees first.
+            Our team has been with us since the beginning because we believe
+            build better technology starts with investing in our employees
+            first.
           </GridListItem>
           <GridListItem title="Trust" invert>
-          Listening to our employees allowed us to craft amazing site for some top tier company's by
-           embracing remote opprotunities for our staff.
+            Listening to our employees allowed us to craft amazing site for some
+            top tier company's by embracing remote opprotunities for our staff.
           </GridListItem>
           <GridListItem title="Compassion" invert>
-          Listen. That is the first step in showing your team how you care about their daily lives 
-            inside, and outside of the work place.
+            Listen. That is the first step in showing your team how you care
+            about their daily lives inside, and outside of the work place.
           </GridListItem>
         </GridList>
       </Container>
@@ -191,20 +192,40 @@ export default async function About() {
     <>
       <PageIntro eyebrow="About us" title="Our strength is collaboration">
         <p>
-        We believe that our strength lies in our collaborative approach, which
+          We believe that our strength lies in our collaborative approach, which
           puts our clients at the center of everything we do.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-          At Motstudio, we don't just build technology; we craft digital masterpieces. Recognized as one of the foremost technology studios globally, our reputation has been sculpted over years of commitment, innovation, and an unwavering pursuit of excellence.
-            </p>
-          <p>Our essence lies in our dedication to premium standards. Each line of code penned, every user interface designed, and every system integrated reflects a meticulous attention to detail, setting us apart in a world where the ordinary often prevails. Our team, composed of luminaries and tech aficionados, approaches every project with a unique blend of cutting-edge technological prowess and creative ingenuity.
+            At Motstudio, we don't just build technology; we craft digital
+            masterpieces. Recognized as one of the foremost technology studios
+            globally, our reputation has been sculpted over years of commitment,
+            innovation, and an unwavering pursuit of excellence.
           </p>
-          <p>We're not just about delivering solutions; we aim to create digital experiences that resonate. And it's this drive that has led to collaborations with some of the most visionary brands and forward-thinking enterprises. Our clients choose Motstudio because they seek more than just a service; they seek a partnership that promises reliability, quality, and a touch of the extraordinary.
+          <p>
+            Our essence lies in our dedication to premium standards. Each line
+            of code penned, every user interface designed, and every system
+            integrated reflects a meticulous attention to detail, setting us
+            apart in a world where the ordinary often prevails. Our team,
+            composed of luminaries and tech aficionados, approaches every
+            project with a unique blend of cutting-edge technological prowess
+            and creative ingenuity.
           </p>
-          <p>Choosing Motstudio means choosing unparalleled technological craftsmanship, premium quality, and a commitment to pushing the boundaries of what's possible.
+          <p>
+            We're not just about delivering solutions; we aim to create digital
+            experiences that resonate. And it's this drive that has led to
+            collaborations with some of the most visionary brands and
+            forward-thinking enterprises. Our clients choose Motstudio because
+            they seek more than just a service; they seek a partnership that
+            promises reliability, quality, and a touch of the extraordinary.
           </p>
-          Join us in our journey of setting the gold standard in technology and design. Because at Motstudio, we believe in crafting tomorrow, today.
+          <p>
+            Choosing Motstudio means choosing unparalleled technological
+            craftsmanship, premium quality, and a commitment to pushing the
+            boundaries of what's possible.
+          </p>
+          Join us in our journey of setting the gold standard in technology and
+          design. Because at Motstudio, we believe in crafting tomorrow, today.
         </div>
       </PageIntro>
       <Container className="mt-16">

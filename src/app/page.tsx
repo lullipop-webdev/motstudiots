@@ -130,8 +130,8 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          Navigate the future confidently, leveraging our expertise to
+          illuminate hidden potentials and turn them into actionable strategies.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -147,23 +147,23 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+              We specialize in crafting beautiful, high-quality marketing pages.
+              Generating high-ranking SEO and dynamically changing Metadata with
+              all of our deployments.
             </ListItem>
             <ListItem title="Application development">
               We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+              app frameworks, and can help you with any of your application.
             </ListItem>
             <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+              We are at the forefront of modern e-commerce development. Creating
+              beautiful, responsive websites and e-commerce applications are
+              what we do.
             </ListItem>
             <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+              At Motstudio, we understand the importance of having a robust and
+              customized CMS. We can help create headless applications that will
+              help make customizing your customer interface a breeze.
             </ListItem>
           </List>
         </div>
@@ -185,7 +185,7 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Award-winning development studio based in Denmark.
+            Award winning developer studio based in Charlotte.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
             We are a development studio working at the intersection of design
