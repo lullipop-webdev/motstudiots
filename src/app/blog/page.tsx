@@ -8,6 +8,7 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
+import PostComment from '@/components/PostComment'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
 
