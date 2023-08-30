@@ -10,6 +10,7 @@ import { remarkRehypeWrap } from 'remark-rehype-wrap'
 import remarkUnwrapImages from 'remark-unwrap-images'
 import shiki from 'shiki'
 import { unifiedConditional } from 'unified-conditional'
+import nextPWA from 'next-pwa'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -79,5 +80,15 @@ export default async function config() {
     },
   })
 
-  return withMDX(nextConfig)
+  let withPWA = nextPWA({
+    experimentalFeatures: {
+      pwa: {
+        enabled: true,
+        icon: '/my-icon.png',
+        serviceWorker: true,
+      },
+    },
+  })
+
+  return withPWA(withMDX(nextConfig))
 }
