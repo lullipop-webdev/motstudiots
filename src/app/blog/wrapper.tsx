@@ -6,7 +6,7 @@ import { PageLinks } from '@/components/PageLinks'
 import { formatDate } from '@/lib/formatDate'
 import { type Article, type MDXEntry, loadArticles } from '@/lib/mdx'
 import PostComment  from '@/components/PostComment'
-
+import PostCommentFeed from '@/components/PostCommentFeed'
 
 
 export default async function BlogArticleWrapper({
@@ -47,7 +47,8 @@ export default async function BlogArticleWrapper({
             {children}
             <div className='mt-24 sm:mt-32 lg:mt-40'>
               <PostComment />
-            </div>
+              </div>
+            <div className='mt-24 sm:mt-32 lg:mt-40'><PostCommentFeed /></div>
           </MDXComponents.wrapper>
 
         </FadeIn>
