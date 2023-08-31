@@ -1,12 +1,15 @@
+
+import { useSession, signIn } from 'next-auth/react'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { MDXComponents } from '@/components/MDXComponents'
+import PostComment  from '@/components/PostComment'
+import PostCommentFeed from '@/components/PostCommentFeed'
 import { PageLinks } from '@/components/PageLinks'
 import { formatDate } from '@/lib/formatDate'
 import { type Article, type MDXEntry, loadArticles } from '@/lib/mdx'
-import PostComment  from '@/components/PostComment'
-import PostCommentFeed from '@/components/PostCommentFeed'
+
 
 
 export default async function BlogArticleWrapper({
@@ -20,6 +23,22 @@ export default async function BlogArticleWrapper({
   let moreArticles = allArticles
     .filter(({ metadata }) => metadata !== article)
     .slice(0, 2)
+
+    
+    function CommentSection() {
+      const { data: session } = useSession();
+    
+      return session ? (
+        <div className='mt-24 sm:mt-32 lg:mt-40'>
+          <PostComment />
+        </div>
+      ) : (
+        <div className='mt-24 sm:mt-32 lg:mt-40'>
+          <button onClick={() => signIn()}>Login to Comment</button>
+        </div>
+      );
+    }
+
 
   return (
     <>
@@ -45,9 +64,8 @@ export default async function BlogArticleWrapper({
         <FadeIn>
           <MDXComponents.wrapper className="mt-24 sm:mt-32 lg:mt-40">
             {children}
-            <div className='mt-24 sm:mt-32 lg:mt-40'>
-              <PostComment />
-              </div>
+            
+            <CommentSection />
             <div className='mt-24 sm:mt-32 lg:mt-40'><PostCommentFeed /></div>
           </MDXComponents.wrapper>
 
