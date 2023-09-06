@@ -20,6 +20,7 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
+import { NextAuthProvider } from './Provider'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -282,8 +283,10 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
   let [logoHovered, setLogoHovered] = useState(false)
 
   return (
+    <NextAuthProvider>
     <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>
       <RootLayoutInner key={pathname}>{children}</RootLayoutInner>
     </RootLayoutContext.Provider>
+    </NextAuthProvider>
   )
 }

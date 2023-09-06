@@ -1,5 +1,3 @@
-
-import { useSession, signIn } from 'next-auth/react'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
@@ -9,8 +7,7 @@ import PostCommentFeed from '@/components/PostCommentFeed'
 import { PageLinks } from '@/components/PageLinks'
 import { formatDate } from '@/lib/formatDate'
 import { type Article, type MDXEntry, loadArticles } from '@/lib/mdx'
-
-
+import CommentSection from '@/components/CommentSection'
 
 export default async function BlogArticleWrapper({
   article,
@@ -25,19 +22,7 @@ export default async function BlogArticleWrapper({
     .slice(0, 2)
 
     
-    function CommentSection() {
-      const { data: session } = useSession();
-    
-      return session ? (
-        <div className='mt-24 sm:mt-32 lg:mt-40'>
-          <PostComment />
-        </div>
-      ) : (
-        <div className='mt-24 sm:mt-32 lg:mt-40'>
-          <button onClick={() => signIn()}>Login to Comment</button>
-        </div>
-      );
-    }
+  
 
 
   return (
